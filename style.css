@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+.card{
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(27, 26, 26, 0.712);
+    font-size: 0;
+
+}
+.card:hover{
+    box-shadow: 0 7px 11px 0 rgba(27, 25, 25, 0.815);
+}
+#result{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-align: right;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.btn{
+    width: 100px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: white;
+}
+.btn-style1{
+    background-color: rgb(52, 52, 143);
+}
+.btn-style2{
+    background-color: orange;
+}
+.btn:hover{
+    background-color: rgba(81, 189, 153, 0.705);
+}
