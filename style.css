@@ -1,43 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-h1 {
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.cal-name {
   text-align: center;
+  font-size: 2rem;
+  color: #ff0000;
+  margin: 0 auto 20px auto;
 }
+
 .card {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 368px;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(27, 26, 26, 0.712);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
   font-size: 0;
-}
-.card:hover {
-  box-shadow: 0 7px 11px 0 rgba(27, 25, 25, 0.815);
-}
-#result {
-  width: 400px;
-  height: 100px;
+  border-radius: 10px;
   padding: 10px;
-  font-weight: bold;
-  font-size: 35px;
-  letter-spacing: 5px;
-  text-align: right;
-  box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(54, 54, 53, 0.87);
+}
+.calc-head {
   margin-top: 10px;
 }
+.calc-head #result {
+  width: 348px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: right;
+  padding: 0 5px;
+  letter-spacing: 1px;
+  outline: none;
+  border: 3px solid black;
+  border-bottom: none;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 .btn {
-  width: 100px;
+  width: 87px;
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.795);
+  background-color: rgb(41, 37, 37);
   color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.gray {
+  background-color: gray;
 }
 .btn-style1 {
-  background-color: rgb(52, 52, 143);
-}
-.btn-style2 {
   background-color: orange;
 }
+.btn-style {
+  background-color: rgb(48, 48, 131);
+  border-bottom-right-radius: 10px;
+}
 .btn:hover {
-  background-color: rgba(81, 189, 153, 0.705);
+  background-color: rgb(112, 199, 170);
+  color: #ff0000;
+}
+/* .brdr-lft {
+  border-top-left-radius: 10px;
+}
+.brdr-rht {
+  border-top-right-radius: 10px;
+} */
+.brdr {
+  border-bottom-left-radius: 10px;
 }
